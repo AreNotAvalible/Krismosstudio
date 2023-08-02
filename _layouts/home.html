@@ -2,33 +2,179 @@
 layout: default
 ---
 
-<div class="home">
-  {%- if page.title -%}
-    <h1 class="page-heading">{{ page.title }}</h1>
-  {%- endif -%}
+<!-- Секция "Услуги" -->
+<section class="container">
 
-  {{ content }}
+    <div class="row">
+        <div class="col-lg-4">
+            <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg"
+                role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
+            </svg>
+            <h2 class="fw-normal">Заголовок</h2>
+            <p>Некоторый типичный заполнитель для трех столбцов текста под каруселью. Это первая колонка.</p>
+            <p><a class="btn btn-secondary" href="#">Посмотреть детали »</a></p>
+        </div>
+        <!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+            <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg"
+                role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
+            </svg>
+            <h2 class="fw-normal">Заголовок</h2>
+            <p>Еще одна захватывающая часть репрезентативного содержимого-заполнителя. На этот раз мы перешли ко второй
+                колонке.</p>
+            <p><a class="btn btn-secondary" href="#">Посмотреть детали »</a></p>
+        </div>
+        <!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+            <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg"
+                role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
+            </svg>
+            <h2 class="fw-normal">Заголовок</h2>
+            <p>И, наконец, третий столбец репрезентативного содержимого заполнителя.</p>
+            <p><a class="btn btn-secondary" href="#">Посмотреть детали »</a></p>
+        </div>
+        <!-- /.col-lg-4 -->
+    </div>
+    <!-- /.row -->
+    <div class="row">
+        <div class="col-lg-4">
+            <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg"
+                role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
+            </svg>
+            <h2 class="fw-normal">Заголовок</h2>
+            <p>Некоторый типичный заполнитель для трех столбцов текста под каруселью. Это первая колонка.</p>
+            <p><a class="btn btn-secondary" href="#">Посмотреть детали »</a></p>
+        </div>
+        <!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+            <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg"
+                role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
+            </svg>
+            <h2 class="fw-normal">Заголовок</h2>
+            <p>Еще одна захватывающая часть репрезентативного содержимого-заполнителя. На этот раз мы перешли ко второй
+                колонке.</p>
+            <p><a class="btn btn-secondary" href="#">Посмотреть детали »</a></p>
+        </div>
+        <!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+            <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg"
+                role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
+            </svg>
+            <h2 class="fw-normal">Заголовок</h2>
+            <p>И, наконец, третий столбец репрезентативного содержимого заполнителя.</p>
+            <p><a class="btn btn-secondary" href="#">Посмотреть детали »</a></p>
+        </div>
+        <!-- /.col-lg-4 -->
+    </div>
+    <!-- /.row -->
 
-  {%- if site.posts.size > 0 -%}
-    <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
-    <ul class="post-list">
-      {%- for post in site.posts -%}
-      <li>
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
-        <h3>
-          <a class="post-link" href="{{ post.url | relative_url }}">
-            {{ post.title | escape }}
-          </a>
-        </h3>
-        {%- if site.show_excerpts -%}
-          {{ post.excerpt }}
-        {%- endif -%}
-      </li>
-      {%- endfor -%}
-    </ul>
+</section>
+<!-- /.Секция "Услуги" -->
 
-    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
-  {%- endif -%}
+<!-- Секция "Партнеры" -->
+<section id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel" data-bs-theme="light">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="" aria-label="Слайд1"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Слайд 2" class="active"
+            aria-current="true"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Слайд 3" class=""></button>
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item">
+            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
+            </svg>
+            <div class="container">
+                <div class="carousel-caption text-start">
+                    <h1>Пример заголовка.</h1>
+                    <p class="opacity-75">Некоторое репрезентативное содержимое-заполнитель для первого слайда карусели.
+                    </p>
+                    <p><a class="btn btn-lg btn-primary" href="#">Зарегистрироваться Сегодня</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item active">
+            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
+            </svg>
+            <div class="container">
+                <div class="carousel-caption">
+                    <h1>Другой пример заголовка.</h1>
+                    <p>Некоторое репрезентативное содержимое-заполнитель для второго слайда карусели.</p>
+                    <p><a class="btn btn-lg btn-primary" href="#">Узнать больше</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
+            </svg>
+            <div class="container">
+                <div class="carousel-caption text-end">
+                    <h1>Еще один для хорошей меры.</h1>
+                    <p>Некоторые репрезентативные материалы-заполнители для третьего слайда этой карусели.</p>
+                    <p><a class="btn btn-lg btn-primary" href="#">Просмотреть галерею</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Предыдущий</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Следующий</span>
+    </button>
+</section>
+<!-- /.Секция "Партнеры" -->
 
-</div>
+<!-- Секция "Контакты" -->
+<section class="container col-xl-10 col-xxl-8 px-4 py-5">
+    <div class="row align-items-center g-lg-5 py-5">
+        <div class="col-lg-7 text-center text-lg-start">
+            <h1 class="display-4 fw-bold lh-1 text-body-emphasis mb-3">Форма регистрации с вертикальным расположением
+                героев</h1>
+            <p class="col-lg-10 fs-4">Ниже приведен пример формы, полностью созданной с помощью элементов управления
+                формы Bootstrap. Каждая требуемая группа форм имеет состояние проверки, которое может быть вызвано
+                попыткой отправить форму, не заполнив ее.</p>
+        </div>
+        <div class="col-md-10 mx-auto col-lg-5">
+            <form class="p-4 p-md-5 border rounded-3 bg-body-tertiary">
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">Адрес электронной почты</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="password" class="form-control" id="floatingPassword" placeholder="Пароль">
+                    <label for="floatingPassword">Пароль</label>
+                </div>
+                <div class="checkbox mb-3">
+                    <label>
+                        <input type="checkbox" value="remember-me"> Запомнить меня
+                    </label>
+                </div>
+                <button class="w-100 btn btn-lg btn-primary" type="submit">Зарегистрироваться</button>
+                <hr class="my-4">
+                <small class="text-body-secondary">Нажимая «Зарегистрироваться», вы соглашаетесь с условиями
+                    использования.</small>
+            </form>
+        </div>
+    </div>
+</section>
+<!-- /.Секция "Контакты" -->
