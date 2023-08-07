@@ -1,21 +1,29 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+<html lang="{{ page.lang | default: site.lang | default: " en" }}">
 
 {%- include head.html -%}
 
-<body>
+<body class="container-fluid">
 
     {%- include navbar.html -%}
 
+    {%- if page.layout == 'home' -%}
+        <!-- Секция "Баннер" -->
+        {%- include home/header.html -%}
+        <!-- /.Секция "Баннер" -->
+    {%- endif -%}
+
     <main class="container-lg">
-            {{ content }}
+        {{ content }}
     </main>
 
     {%- include footer.html -%}
 
     <!-- @AreNotAvalible 2023-08-02 22:04
     Вместо стандартной темы "minima" будет использоваться фреймворк Bootstrap v5.3 -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
     <!-- --->
 </body>
 
