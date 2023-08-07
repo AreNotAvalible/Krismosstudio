@@ -54,8 +54,13 @@ lang: "ru-RU"
 # Вместо стандартной темы "minima" будет использоваться фреймворк Bootstrap v5.3
 # theme: minima
 # --->
-plugins:
-  - jekyll-feed
+
+
+# <--- @AreNotAvalible 2023-08-07 14:41
+# Вместо стандартной темы "minima" будет использоваться фреймворк Bootstrap v5.3
+# plugins:
+#   - jekyll-feed
+# --->
 
 
 ### Exclude from processing ###
