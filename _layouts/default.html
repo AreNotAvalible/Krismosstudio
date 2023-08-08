@@ -5,19 +5,7 @@
 
 <body>
 
-    {%- include navbar.html -%}
-
-    {%- if page.layout == 'home' -%}
-        <!-- Секция "Баннер" -->
-        {%- include home/header.html -%}
-        <!-- /.Секция "Баннер" -->
-    {%- endif -%}
-
-    <main class="g-col-12">
-        {{ content }}
-    </main>
-
-    {%- include footer.html -%}
+    {{ content }}
 
     <!-- @AreNotAvalible 2023-08-02 22:04
     Вместо стандартной темы "minima" будет использоваться фреймворк Bootstrap v5.3 -->
