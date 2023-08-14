@@ -1,0 +1,15 @@
+@import "vars";
+@import "bootstrap-5.3/bootstrap.scss";
+
+/* Custom styles */
+
+.cover-container {
+    background-image: url("assets/img/test_banner.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.cover-container {
+    max-width: 42em;
+}

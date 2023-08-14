@@ -1,0 +1,17 @@
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- This is a Liquid comment -->
+    {% comment %}
+    {%- seo -%}
+    {% endcomment %}
+    <!-- @AreNotAvalible 2023-08-08 14:58
+        Вместо стандартной темы "minima" будет использоваться фреймворк Bootstrap v5.3.1 -->
+    <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+    <!-- --->
+    {%- feed_meta -%}
+    {%- if jekyll.environment == 'production' and site.google_analytics -%}
+        {%- include google-analytics.html -%}
+    {%- endif -%}
+</head>
