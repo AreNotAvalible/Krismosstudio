@@ -37,6 +37,7 @@ baseurl: "" # Krismosstudio ### the subpath of your site, e.g. /blog
 
 # "GitHub Pages Docs / Настройка сайта с помощью Jekyll / Создание сайта с помощью Jekyll / пункт 13" ---> 
 
+lang: ru-RU
 title: Your awesome title
 description: >- ### this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
