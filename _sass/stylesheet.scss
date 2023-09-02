@@ -1,23 +1,30 @@
+@import "vars";
+@import "bootstrap-5.3.1/bootstrap";
+
+/* "Custom Styles" */
+
 // "body styles"
-@import "body-styles";
+@import "styles/body-styles";
 // ./ "body styles"
 
 // "navbar styles"
-@import "navbar-styles";
+@import "styles/navbar-styles";
 // ./ "navbar styles"
 
 // "trasporant styles"
-@import "transporant-styles";
+@import "styles/transporant-styles";
 // ./ "trasporant styles"
 
 // "services styles"
-@import "services-styles";
+@import "styles/services-styles";
 // ./ "services styles"
 
 // "contact information styles"
-@import "contact-info-styles";
+@import "styles/contact-info-styles";
 // ./ "contact information styles"
 
 // "footer styles"
-@import "footer-styles";
+@import "styles/footer-styles";
 // ./ "trasporant styles"
+
+/* ./ "Custom Styles" */
