@@ -1,23 +1,31 @@
+@import "bootstrap-5.3.1/functions";
+@import "vars";
+@import "bootstrap-5.3.1/bootstrap";
+
+/* "Custom Styles" */
+
 // "body styles"
-@import "body-styles";
+@import "styles/styles-body";
 // ./ "body styles"
 
 // "navbar styles"
-@import "navbar-styles";
+@import "styles/styles-navbar";
 // ./ "navbar styles"
 
 // "trasporant styles"
-@import "transporant-styles";
+@import "styles/styles-transporant";
 // ./ "trasporant styles"
 
 // "services styles"
-@import "services-styles";
+@import "styles/styles-services";
 // ./ "services styles"
 
 // "contact information styles"
-@import "contact-info-styles";
+@import "styles/styles-contact-info";
 // ./ "contact information styles"
 
 // "footer styles"
-@import "footer-styles";
+@import "styles/styles-footer";
 // ./ "trasporant styles"
+
+/* ./ "Custom Styles" */
