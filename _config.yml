@@ -31,9 +31,9 @@
 # > когда репозиторий размещается в подкаталоге.
 # >
 
-domain: "" # arenotavalible.github.io
-url: "" # https://arenotavalible.github.io/Krismosstudio ### the base hostname & protocol for your site, e.g. http://example.com
-baseurl: "" # Krismosstudio ### the subpath of your site, e.g. /blog
+domain: arenotavalible.github.io
+url: https://arenotavalible.github.io/Krismosstudio ### the base hostname & protocol for your site, e.g. http://example.com
+baseurl: Krismosstudio ### the subpath of your site, e.g. /blog
 
 # "GitHub Pages Docs / Настройка сайта с помощью Jekyll / Создание сайта с помощью Jekyll / пункт 13" ---> 
 
